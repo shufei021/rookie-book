@@ -1,4 +1,4 @@
-### JavaScript 高级部分
+# JavaScript 高级部分
 
 ##### 1.什么是原型？
 

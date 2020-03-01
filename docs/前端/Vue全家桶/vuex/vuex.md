@@ -1,12 +1,12 @@
-### vuex
+# vuex
 
-#### 概念：
+## 概念
 
 > Vuex 是一个专为 Vue.js 应用程序开发的**状态管理模式**。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
 
 ![示例](https://vuex.vuejs.org/vuex.png)
 
-#### 前言：
+## 前言
 
 + 每一个 Vuex 应用的核心就是 store（仓库）。“store”基本上就是一个容器，它包含着你的应用中大部分的**状态 (state)**。Vuex 和单纯的全局对象有以下两点不同：
 
@@ -43,15 +43,15 @@ console.log(store.state.count) // -> 1
 
 **触发变化也仅仅是在组件的 methods 中提交 mutation。**
 
-#### 核心概念：
+## 核心概念
 
-##### state：
+### state：
 
-###### 单一状态树
+##### 单一状态树
 
 > Vuex 使用**单一状态树**——是的，用一个对象就包含了全部的应用层级状态。至此它便作为一个“唯一数据源 ([SSOT](https://en.wikipedia.org/wiki/Single_source_of_truth))”而存在。这也意味着，每个应用将仅仅包含一个 store 实例。单一状态树让我们能够直接地定位任一特定的状态片段，在调试的过程中也能轻易地取得整个当前应用状态的快照
 
-###### 在 Vue 组件中获得 Vuex 状态
+##### 在 Vue 组件中获得 Vuex 状态
 
 由于 Vuex 的状态存储是响应式的，从 store 实例中读取状态最简单的方法就是在[计算属性](https://cn.vuejs.org/guide/computed.html)中返回某个状态：
 

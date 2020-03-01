@@ -1,14 +1,24 @@
-# 求最小组合
-> 题目描述：
+# 算法题
 
-求 数组`[1,3,4,8,10,11]`中两个数相减的绝对值最小的组合
+## 题目
 
-> 输入：[1,3,4,8,10,11]
-
-> 返回：[[3,4],[10,11]]
+给定一个数组 `arr`,通过计算，返回`arr`中两个数相减的绝对值最小的组合
 
 ```javascript
-var arr = [1,3,4,8,10,11]
+示例：
+
+输入：[1,3,4,8,10,11]
+返回：[[3,4],[10,11]]
+
+输入：[1,3,4,8]
+返回：[[3,4]]
+
+```
+
+## 题解
+
+```javascript
+function getResult(arr){
 
     //求组合数
     var groups = []
@@ -20,8 +30,8 @@ var arr = [1,3,4,8,10,11]
   
     // 相减绝对值计算
     let absHanlde = groups.map(item=>Math.abs(item[0]-item[1]))
-    console.log(absHanlde)
-    //求组合绝对值最小值组合项索引
+  
+    //求组合绝对值最小值
 
     let min = Math.min(...absHanlde)
 
@@ -41,6 +51,6 @@ var arr = [1,3,4,8,10,11]
     for(let i=0;i<minIndex.length;i++){
         result.push(groups[minIndex[i]])
     }
-   
-    console.log(result) // [[3,4],[10,11]]
+    return result
+}  
 ```

@@ -12,8 +12,16 @@ new Docute({
       link: '/'
     },
     {
-      title: 'GitHub',
-      link: 'https://github.com/shufei021/rookie-book'
+      title: 'webpack',
+      link: '/前端/前端工程化构建工具/webpack/webpack0'
+    },
+    {
+      title: 'git',
+      link: '/前端/项目版本控制/git'
+    },
+    {
+      title: '开发相关网站',
+      link: '/开发相关网站/dev-about'
     },
     {
       title: '工具',
@@ -28,12 +36,16 @@ new Docute({
         }
       ]
     },
+    {
+      title: 'GitHub',
+      link: 'https://github.com/shufei021/rookie-book'
+    }
   ],
 
   //侧边栏
   sidebar: [
     {
-      title: 'Vue全家桶',
+      title: 'Vue',
       links: [
         {
           title: 'Vue',
@@ -50,10 +62,27 @@ new Docute({
         {
           title: 'Axios',
           link: '/前端/Vue全家桶/axios/axios'
+        }
+      ]
+    },
+    {
+      title: '工具函数',
+      links: [
+        {
+          title: 'url',
+          link: '/工具函数/url',
         },
         {
-          title: 'Element-ui',
-          link: '/前端/Vue全家桶/elenemnt-ui/elenemnt-ui'
+          title: 'date',
+          link: '/工具函数/date',
+        },
+        {
+          title: 'generater',
+          link: '/工具函数/generater',
+        },
+        {
+          title: 'preview',
+          link: '/工具函数/preview',
         }
       ]
     },
@@ -61,12 +90,12 @@ new Docute({
       title: '算法',
       links: [
         {
-          title: '数组相关',
+          title: '算法题-1',
           link: '/algorithm/al-1',
         },
         {
-          title: 'CSS3时钟',
-          link: '/case/clock-case',
+          title: '算法题-2',
+          link: '/algorithm/al-2',
         }
       ]
     },
@@ -74,12 +103,66 @@ new Docute({
       title: '案例',
       links: [
         {
-          title: '仿博客园日历',
+          title: '日历',
           link: '/case/date-case',
         },
         {
-          title: 'CSS3时钟',
+          title: '时钟',
           link: '/case/clock-case',
+        }
+      ]
+    },
+    {
+      title: '开源项目',
+      links: [
+        {
+          title: 'rookie-localstorage-web',
+          link: '/开源项目/rookie-localstorage-web',
+        }
+      ]
+    },
+    {
+      title: '面试相关',
+      links: [
+        {
+          title: '安全类',
+          link: '/面试相关/安全类',
+        },
+        {
+          title: '错误监控类',
+          link: '/面试相关/错误监控类',
+        },
+        {
+          title: '通信类',
+          link: '/面试相关/通信类',
+        },
+        {
+          title: '渲染机制类',
+          link: '/面试相关/渲染机制类',
+        },
+        {
+          title: 'http协议类',
+          link: '/面试相关/http协议类',
+        },
+        {
+          title: '前端兼容问题',
+          link: '/面试相关/前端兼容问题',
+        },
+        {
+          title: '页面性能类',
+          link: '/面试相关/页面性能类',
+        },
+        {
+          title: '继承',
+          link: '/面试相关/继承',
+        },
+        {
+          title: '原型链',
+          link: '/面试相关/原型链',
+        },
+        {
+          title: 'JS高级',
+          link: '/面试相关/JS高级',
         }
       ]
     }
