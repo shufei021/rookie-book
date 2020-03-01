@@ -3,18 +3,31 @@
 new Docute({
 
   target: '#docute',
-  sourcePath: './docs/',
+  sourcePath: 'http://moxiaofei.com/markdown/',
 
   //顶部导航栏
   nav: [
     {
-      title: 'Home',
-      link: '/'
+      title: '主页',
+      link: '/README'
     },
     {
-      title: 'Prototype',
-      link: '/prototype',
-    }
+      title: '工具',
+      children: [
+        {
+          title: 'Spectrum',
+          link: 'https://spectrum.chat/your-community'
+        },
+        {
+          title: 'Discord',
+          link: 'https://discord.app/your-discord-server'
+        }
+      ]
+    },
+    {
+      title: 'GitHub',
+      link: 'https://github.com/shufei021/rookie-book'
+    },
   ],
 
   //侧边栏
@@ -44,7 +57,7 @@ new Docute({
           link: '/前端/Vue全家桶/elenemnt-ui/elenemnt-ui'
         }
       ]
-    },
+    }
   ],
   
 })
