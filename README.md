@@ -13,4 +13,4 @@ rookie-book
 └─── package.json ----- 项目依赖
 ```
 ### 项目结构图示
-![结构图](../assets/imgs/structure.jpg)
+![结构图](docs/assets/imgs/structure.jpg)
