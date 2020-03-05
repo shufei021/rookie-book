@@ -96,9 +96,36 @@ new Docute({
         {
           title: '算法题-2',
           link: '/algorithm/al-2',
+        },
+        {
+          title: '算法题-3',
+          link: '/algorithm/al-3',
+        },
+        {
+          title: '算法题-4',
+          link: '/algorithm/al-4',
         }
       ]
     },
+    {
+      title: 'Polyfill',
+      links: [
+        {
+          title: 'Polyfill',
+          link: '/Polyfill/Polyfill',
+        }
+      ]
+    },
+    {
+      title: '技巧篇',
+      links: [
+        {
+          title: 'skill',
+          link: '/skill/skill',
+        }
+      ]
+    },
+    
     {
       title: '案例',
       links: [
