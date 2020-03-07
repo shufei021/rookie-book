@@ -68,3 +68,30 @@ let jsonArr = [{name:'list',age:27},{name:'wangbo',age:28},{name:'zhangsan',age:
 jsonArr.findIndexAllJson(item=>item.age==27) // [0, 2]
 
 ```
+**对数组实现一个字符串的sustr方法**
+> 字符串截取方法 substr，第一个参数是截取开始的索引，第二个参数是截取的长度
+
+```js
+Array.prototype.substr= function(startIndex,len){
+    let res = []
+    for(let i=0;i<this.length;i++){
+        if(i>=startIndex && res.length<len){
+            res.push(this[i]) 
+        }
+    }
+    return res
+}
+```
+
+测试用例：
+
+```js
+
+let arr = [1,2,3,4,5] 
+arr.substr(0,1) // [1]
+arr.substr(0,2) // [1,2]
+arr.substr(0,3) // [1,2,3]
+arr.substr(1,3) // [2,3,4]
+
+```
+

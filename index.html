@@ -24,5 +24,67 @@
     <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
     <script src="./script.js"></script>
 </body>
-
+<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+<script>
+    (function($){
+        function Obj(element,options){
+            this.element = element;
+            this.defaults = {
+                time:30,
+                speed:8,
+                scrollTop:100
+            };
+            this.options = $.extend({},this.defaults,options)
+         }
+         Obj.prototype.toTop = function(){
+              var options = $.extend({},this.defaults,options);
+              var timer = null;
+              $("body").append($("<span id='toTop' style='position: fixed;width: 54px;height: 54px;bottom: 50px;right: 70px;cursor: pointer;background: red; z-Index: 101;display:none;line-height: 54px;color: rgb(255, 255, 255);text-align: center'>顶部</span>"));
+              $("#toTop").bind("click",function(){ 
+                   clearInterval(timer);
+                   timer = setInterval(function(){
+                     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                     var iSpeed = Math.floor(0-scrollTop/options.speed);
+                     document.documentElement.scrollTop = document.body.scrollTop = scrollTop + iSpeed;
+                     if(scrollTop == 0){
+                        clearInterval(timer);
+                      } 
+                        },options.time);
+                   });
+              return this;
+         };
+         Obj.prototype.scroll = function(){
+             var options = $.extend({},this.defaults,options);
+             this.element.bind("scroll",function(){
+                 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                 if(scrollTop>=options.scrollTop){
+                      $("#toTop").fadeIn(); 
+                  }else{
+                      $("#toTop").fadeOut();
+                  }
+             })
+             return this;
+         }
+        $.prototype.extend({
+             "toTop":function(options){
+                var toTop = new Obj(this,options);
+                return toTop.toTop()
+             },
+             "scroll":function(options){
+                var scroll = new Obj(this,options);
+                return scroll.scroll()
+             }
+        })
+    })(jQuery)
+    
+    $(function(){
+      $("#toTop").toTop({
+         time:30,
+         speed:8
+      });
+      $(window).scroll({
+        scrollTop:100
+      });
+    })
+    </script>
 </html>

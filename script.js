@@ -41,11 +41,12 @@ new Docute({
       link: 'https://github.com/shufei021/rookie-book'
     }
   ],
-
+  
   //侧边栏
   sidebar: [
     {
       title: 'Vue',
+      openInNewTab:true,
       links: [
         {
           title: 'Vue',
@@ -67,7 +68,7 @@ new Docute({
     },
     {
       title: '工具函数',
-      links: [
+      children: [
         {
           title: 'url',
           link: '/工具函数/url',
@@ -104,6 +105,39 @@ new Docute({
         {
           title: '算法题-4',
           link: '/algorithm/al-4',
+        }
+      ]
+    },
+    {
+      title: 'leetcode算法',
+      links: [
+        {
+          title: '个人leetcode题解',
+          link: '/Leetcode算法/c-1',
+        },
+        {
+          title: 'leetcode第3题',
+          link: '/Leetcode算法/leetcode-3.md',
+        },
+        {
+          title: 'leetcode第4题',
+          link: '/Leetcode算法/leetcode-4.md',
+        },
+        {
+          title: 'leetcode第5题',
+          link: '/Leetcode算法/leetcode-5.md',
+        },
+        {
+          title: 'leetcode第7题',
+          link: '/Leetcode算法/leetcode-7.md',
+        },
+        {
+          title: 'leetcode第8题',
+          link: '/Leetcode算法/leetcode-8.md',
+        },
+        {
+          title: 'leetcode第93题',
+          link: '/Leetcode算法/leetcode-93.md',
         }
       ]
     },
