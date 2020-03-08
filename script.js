@@ -167,6 +167,24 @@ new Docute({
         }
       ]
     },
+    {
+      title: '组件',
+      links: [
+        {
+          title: 'vue组件',
+          link: '/skill/skill',
+        }
+      ]
+    },
+    {
+      title: '插件',
+      links: [
+        {
+          title: '回到顶部插件',
+          link: '/skill/skill',
+        }
+      ]
+    },
     
     {
       title: '案例',
@@ -184,6 +202,10 @@ new Docute({
     {
       title: '开源项目',
       links: [
+        {
+          title: 'picker-card',
+          link: '/开源项目/picker-card',
+        },
         {
           title: 'rookie-localstorage-web',
           link: '/开源项目/rookie-localstorage-web',
