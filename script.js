@@ -116,6 +116,14 @@ new Docute({
           link: '/Leetcode算法/c-1',
         },
         {
+          title: 'leetcode第1题',
+          link: '/Leetcode算法/leetcode-1.md',
+        },
+        {
+          title: 'leetcode第2题',
+          link: '/Leetcode算法/leetcode-2.md',
+        },
+        {
           title: 'leetcode第3题',
           link: '/Leetcode算法/leetcode-3.md',
         },

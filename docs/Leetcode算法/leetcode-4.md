@@ -1,8 +1,8 @@
-# leetcode 第四题
+# leetcode 第4题
 
-[leetcode第四题](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
+[leetcode第4题](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
 
-**难度：**简单
+**难度：**困难
 
 题目：寻找两个有序数组的中位数
 > 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
